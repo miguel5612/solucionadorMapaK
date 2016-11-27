@@ -1,0 +1,23 @@
+ant:
+<ant>
+  <mkdir dir="C:\Users\Miguel\Desktop\Diseño digital\Solver_KMAP\for_redistribution" />
+  <mkdir dir="C:\Users\Miguel\Desktop\Diseño digital\Solver_KMAP\for_testing" />
+  <mkdir dir="C:\Users\Miguel\Desktop\Diseño digital\Solver_KMAP\for_redistribution_files_only" />
+</ant>
+mcc -C -o Solver_KMAP -W WinMain:Solver_KMAP -T link:exe -d 'C:\Users\Miguel\Desktop\Diseño digital\Solver_KMAP\for_testing' -v 'C:\Users\Miguel\Desktop\Diseño digital\guiFinal.m' -a 'C:\Users\Miguel\Desktop\Diseño digital\guiFinal.fig' -a 'C:\Users\Miguel\Desktop\Diseño digital\guiFinal.m' 
+Compiler version: 6.0 (R2015a)
+Dependency analysis by REQUIREMENTS.
+[Warning: Adding path "C:\Users\Miguel\Desktop\Diseño digital" to Compiler path
+instance.] 
+Parsing file "C:\Users\Miguel\Desktop\Diseño digital\guiFinal.m"
+	(Referenced from: "Compiler Command Line").
+Deleting 0 temporary MEX authorization files.
+Generating file "C:\Users\Miguel\Desktop\Diseño digital\Solver_KMAP\for_testing\readme.txt".
+Packaging...
+Adding custom icon C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\compiler\Resources\default_icon.ico to C:\Users\Miguel\Desktop\Diseño digital\Solver_KMAP\for_testing\Solver_KMAP.exe.
+Attempting to embed the CTF archive into the application C:\Users\Miguel\Desktop\Diseño digital\Solver_KMAP\for_testing\Solver_KMAP.exe.
+Finished embedding CTF archive. Deleting the external CTF archive.
+Creating the bundle...
+Web based installer created at C:\Users\Miguel\Desktop\Diseño digital\Solver_KMAP\for_redistribution\MyAppInstaller_web.exe.
+Packaging complete.
+Elapsed packaging time was: 3 minutes and 40 seconds.
