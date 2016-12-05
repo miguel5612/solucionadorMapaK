@@ -1,0 +1,9 @@
+ant:
+<ant>
+  <mkdir dir="C:\Users\Miguel\Desktop\solucionadorMapaK\K_MAP_SOLVER\for_redistribution" />
+  <mkdir dir="C:\Users\Miguel\Desktop\solucionadorMapaK\K_MAP_SOLVER\for_testing" />
+  <mkdir dir="C:\Users\Miguel\Desktop\solucionadorMapaK\K_MAP_SOLVER\for_redistribution_files_only" />
+</ant>
+mcc -C -o K_MAP_SOLVER -W WinMain:K_MAP_SOLVER -T link:exe -d C:\Users\Miguel\Desktop\solucionadorMapaK\K_MAP_SOLVER\for_testing -v C:\Users\Miguel\Desktop\solucionadorMapaK\guiFinal.m -a C:\Users\Miguel\Desktop\solucionadorMapaK\guiFinal.asv -a C:\Users\Miguel\Desktop\solucionadorMapaK\guiFinal.fig -a C:\Users\Miguel\Desktop\solucionadorMapaK\guiFinal.m -a C:\Users\Miguel\Desktop\solucionadorMapaK\PackagingLog.txt 
+Compiler version: 6.0 (R2015a)
+Dependency analysis by REQUIREMENTS.
