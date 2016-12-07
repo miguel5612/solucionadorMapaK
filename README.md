@@ -2,10 +2,16 @@
 ## DESARRLLADORES 
 * MIGUEL CALIFA.
 * DUMAR HIDALGO.
+
+
 ##CONTACTO
+
+
 >miguelangelcu@ufps.edu.co
 >miguelangel5612@hotmail.com
 >onmotica.com
+
+
 ##BUGS solucionados
 Ultima update : 06 - 12 - 2016
 >Añadido implicantes primos faltantes 
