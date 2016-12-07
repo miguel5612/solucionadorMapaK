@@ -33,8 +33,8 @@ NOTE: You will need administrator rights to run MCRInstaller.
 
 Files to package for Standalone 
 ================================
--Solver_KMAP.ctf (component technology file)
--Solver_KMAP.exe
+-SolucionadorMapasK.ctf (component technology file)
+-SolucionadorMapasK.exe
 -MCRInstaller.exe 
    -if end users are unable to download the MATLAB runtime using the above  
     link, include it when building your component by clicking 

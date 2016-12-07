@@ -22,7 +22,7 @@ function varargout = guiFinal(varargin)
 
 % Edit the above text to modify the response to help guiFinal
 
-% Last Modified by GUIDE v2.5 27-Nov-2016 15:42:57
+% Last Modified by GUIDE v2.5 05-Dec-2016 22:15:44
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -854,25 +854,25 @@ end
     end
     faltantes
     largo = size(faltantes)
-    preRespuesta = []
+    minTerminosSinPar = []
     valores = [ 'A';'B';'C';'D';'E';'F';'G';'H';'I';'J';'K';'L';'M';'N';'O';'P';'Q';'R';'S';'T';'U';'V';'W';'X';'Y';'Z' ];
     for i=1:1:largo(1)
         binario = dec2bin(faltantes(i),cantidad)
 
         for j =1:1:cantidad
             if binario(j)=='1'
-               preRespuesta = horzcat(preRespuesta,valores(j,:))
+               minTerminosSinPar = horzcat(minTerminosSinPar,valores(j,:))
             else 
-                preRespuesta = horzcat(preRespuesta,valores(j,:),char(39))
+                minTerminosSinPar = horzcat(minTerminosSinPar,valores(j,:),char(39))
             end
 
         end
         if i<largo(1)
-        preRespuesta = horzcat(preRespuesta,'+')
+        minTerminosSinPar = horzcat(minTerminosSinPar,'+')
     end
 
     end
-    preRespuesta
+    minTerminosSinPar
 
     %momento de analizar y hacer la matriz completa 
     matrizCompletita = {} ;
@@ -1069,13 +1069,13 @@ end
     solutemp = {};
     
    largo = size(solucion);
-    largo2 = size(preRespuesta)
+    largo2 = size(minTerminosSinPar)
     if largo2(2)~=0  && largo(2)~=0
-        solucion=horzcat(solucion,'+',preRespuesta);
+        solucion=horzcat(solucion,'+',minTerminosSinPar);
         disp('concatenando lo que falta')
     else if largo2(2)~=0 
         disp('concatenando lo unico q hay')
-        solucion=horzcat(preRespuesta);
+        solucion=horzcat(minTerminosSinPar);
     end
     end
     solutemp;
@@ -1211,6 +1211,7 @@ function pushbutton3_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 msgbox('buscanos en facebok como Miguel Califa , Dumar hidaldo , Onmotica.com');
+web('https://github.com/miguel5612/solucionadorMapaK')
 
 % --- Executes on button press in pushbutton4.
 function pushbutton4_Callback(hObject, eventdata, handles)
@@ -1218,8 +1219,8 @@ function pushbutton4_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 msgbox('whatsapp info : +57 3192597748 Colombia');
-web('https://www.facebook.com/miguel.califa');
-
+%web('https://www.facebook.com/miguel.califa');
+web('https://github.com/miguel5612/solucionadorMapaK')
 
 function edit1_Callback(hObject, eventdata, handles)
 % hObject    handle to edit1 (see GCBO)
@@ -1257,3 +1258,31 @@ web('http://www.miguelcalifa.me');
 % hObject    handle to pushbutton5 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+
+
+% --- Executes during object creation, after setting all properties.
+function axes1_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to axes1 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: place code in OpeningFcn to populate axes1
+
+
+% --- If Enable == 'on', executes on mouse press in 5 pixel border.
+% --- Otherwise, executes on mouse press in 5 pixel border or over text3.
+function text3_ButtonDownFcn(hObject, eventdata, handles)
+% hObject    handle to text3 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --- Executes during object creation, after setting all properties.
+function axes2_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to axes2 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: place code in OpeningFcn to populate axes2
+axes(hObject)
+imshow('base2.png');
