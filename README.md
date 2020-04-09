@@ -30,8 +30,8 @@ Ultima update : 06 - 12 - 2016
 
 ## Como utilizar 
 
-* [Concepto] (https://www.youtube.com/watch?v=VnZLRrJYa2I)
-* [Uso] (https://www.youtube.com/watch?v=tLzETuuNF8o)
+* [Concepto](https://www.youtube.com/watch?v=VnZLRrJYa2I)
+* [Uso](https://www.youtube.com/watch?v=tLzETuuNF8o)
 
 ## likes
 
