@@ -16,13 +16,6 @@
 
 # solucionadorMapaK
 
-## CONTACTO
-
-
->miguelangelcu@ufps.edu.co
->miguelangel5612@hotmail.com
->onmotica.com
-
 
 ## BUGS solucionados
 
@@ -59,6 +52,14 @@ Ultima update : 06 - 12 - 2016
 
 * Copyrigth - MIGUEL CALIFA - DUMAR HIDALGO 
 * No se permite copia pero si se permite ser referenciado y optimizado siempre y cuando se mencione el origen.
+
+
+## CONTACTO
+
+
+* [email 1](mailto:miguelangelcu@ufps.edu.co)
+* [email 2](mailto:miguelangel5612@hotmail.com)
+* [website](http://onmotica.com)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
